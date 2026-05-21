@@ -13,7 +13,7 @@ public class LinearSearch {
         {
             arr[i]=sc.nextInt();
         }
-        System.out.println("Enter the element to search:");
+        System.out.println("Enter the element to search on array:");
         s=sc.nextInt();
         for(int i=0;i<n;i++)
         {
