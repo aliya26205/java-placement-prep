@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SmallestElement {
     public static void main(String[] args) {
-         int n;
+        int n;
         int[] arr=new int[10];
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the no of array elemets:");
