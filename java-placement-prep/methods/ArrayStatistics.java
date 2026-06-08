@@ -5,7 +5,7 @@ public class ArrayStatistics {
     public static void findSum(int arr[],int n)
     {
         int sum=0;
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<n;i++)
         {
             sum=sum+arr[i];
         }
@@ -14,7 +14,7 @@ public class ArrayStatistics {
     public static void findAverage(int arr[],int n)
     {
         int sum=0,avg=0;
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<n;i++)
         {
             sum=sum+arr[i];
         }
@@ -24,7 +24,7 @@ public class ArrayStatistics {
     public static void findLargest(int arr[],int n)
     {
         int large=arr[0];
-         for(int i=0;i<=n;i++)
+         for(int i=0;i<n;i++)
         {
             if(arr[i]>large)
                 large=arr[i];
@@ -35,7 +35,7 @@ public class ArrayStatistics {
     public static void findSmallest(int arr[],int n)
     {
         int small=arr[0];
-         for(int i=0;i<=n;i++)
+         for(int i=0;i<n;i++)
         {
             if(arr[i]<small)
                 small=arr[i];
