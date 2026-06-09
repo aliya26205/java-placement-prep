@@ -1,6 +1,5 @@
 package methods;
 
-import java.util.*;
 
 class CalculatorOverloading {
     public static int sum(int a, int b) {
