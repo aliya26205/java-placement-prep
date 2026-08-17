@@ -1,3 +1,4 @@
+//pyramid
 package starpatterns;
 
 import java.util.*;
