@@ -1,3 +1,4 @@
+//increasing triangle
 package starpatterns;
 import java.util.*;
 public class sample2 {

@@ -1,3 +1,4 @@
+//Decreasing triangle
 package starpatterns;
 import java.util.*;
 public class sample3 {
