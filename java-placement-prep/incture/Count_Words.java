@@ -5,6 +5,8 @@ public class Main {
       Scanner sc=new Scanner(System.in);
       String str=sc.nextLine();
       String[] words = str.split(" ");
+        //String[] words = str.trim().split("\\s+");
+        //trim() removes extra spaces at the beginning/end. \\s+ treats one or more spaces/tabs as a separator
       System.out.println(words.length);
     }
 }
