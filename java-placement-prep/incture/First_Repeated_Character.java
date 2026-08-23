@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      String str=sc.next();
+      for(int i=0;i<str.length();i++){
+        char ch=str.charAt(i);
+        for(int j = 0; j < i; j++){//check only previous charactors
+          char ch2=str.charAt(j);
+          if(ch==ch2){
+            System.out.println(ch);
+            return;
+          }
+        }
+      }
+    }
+}
+
+/*Input: abccba
+Output: c*/
