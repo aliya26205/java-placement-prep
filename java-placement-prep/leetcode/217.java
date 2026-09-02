@@ -34,3 +34,19 @@ class Solution {
         return result;
     }
 }
+/*method 2 :
+use hashset 
+put elemets in hash set before putting check if its already there */
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        boolean result=false;
+        Set<Integer> set=new HashSet<>();
+
+        for(int num:nums){
+            if(set.contains(num))
+               result=true;
+            set.add(num);
+        }
+        return result;
+    }
+}
