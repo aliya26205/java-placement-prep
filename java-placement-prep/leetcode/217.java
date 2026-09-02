@@ -25,7 +25,7 @@ muns[i]==nums[i+1]
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         boolean result=false;
-        Arrays.sort(nums);
+        Arrays.sort(nums);//t :O(n.logn) s:O(log)
         for(int i=0;i<nums.length-1;i++){
             if(nums[i]==nums[i+1]){
                 result=true;
