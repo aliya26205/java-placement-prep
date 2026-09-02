@@ -18,3 +18,19 @@ class Solution {
         return result;
     }
 }
+/*method 1:
+sort and thn compare 1st and 2nd element 
+muns[i]==nums[i+1]
+*/
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        boolean result=false;
+        Arrays.sort(nums);
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i]==nums[i+1]){
+                result=true;
+            }
+        }
+        return result;
+    }
+}
