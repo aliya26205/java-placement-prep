@@ -39,7 +39,7 @@ class Solution {
     return 0;
     }
 }
-/**/
+/* method 2: using xor*/
 class Solution {
     public int singleNumber(int[] nums) {
        int res=0;
