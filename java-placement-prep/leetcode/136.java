@@ -50,3 +50,8 @@ class Solution {
        return res;
     }
 }
+/*
+1^1=0;:- a^a=0;
+0^1=1;:- 0^a=a;
+bitwaise xor rules
+*/
