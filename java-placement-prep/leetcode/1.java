@@ -1,3 +1,6 @@
+/*Two sum problem
+    using hashmaps*/
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         
