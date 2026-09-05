@@ -33,6 +33,8 @@ class Solution {
         return new int[]{};
     }
 }
+
+/*method 2*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
