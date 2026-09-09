@@ -25,3 +25,10 @@ public class Main {
       }
     }
 }
+/*STDIN
+1234
+Output:
+Old Array:
+1 2 3 4 
+New Array:
+4 3 2 1 */
