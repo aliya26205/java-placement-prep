@@ -10,7 +10,12 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]*/
 /*Method-1
 take full array th reverse it
 reverse 1st part of reversed array till k-1
-reverse 2nd part of reversed array from k to n-1*/
+reverse 2nd part of reversed array from k to n-1
+eg:
+1 2 3 4 5 6 7
+7 6 5 4 3 2 1
+7 6 5   4 3 2 1
+5 6 7   1 2 3 4*/
 class Solution {
     public void rev(int[] nums,int start,int end){
         while(start<=end){
