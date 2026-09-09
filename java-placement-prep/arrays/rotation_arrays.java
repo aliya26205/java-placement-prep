@@ -32,8 +32,17 @@ Old Array:
 1 2 3 4 
 New Array:
 4 3 2 1
+
         start           end
           ↓              ↓
 Index:   0   1   2   3   4
 Array:   1   2   3   4   5
-*/
+
+Swap:
+1 ↔ 5
+
+Then move both:
+        start       end
+          ↓         ↓
+Index:   0   1   2   3   4
+Array:   5   2   3   4   1*/
