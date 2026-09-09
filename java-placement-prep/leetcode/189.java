@@ -7,6 +7,10 @@ Explanation:
 rotate 1 steps to the right: [7,1,2,3,4,5,6]
 rotate 2 steps to the right: [6,7,1,2,3,4,5]
 rotate 3 steps to the right: [5,6,7,1,2,3,4]*/
+/*Method-1
+take full array th reverse it
+reverse 1st part of reversed array till k-1
+reverse 2nd part of reversed array from k to n-1*/
 class Solution {
     public void rev(int[] nums,int start,int end){
         while(start<=end){
