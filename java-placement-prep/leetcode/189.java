@@ -37,3 +37,33 @@ class Solution {
         rev(nums,k,n-1);
     }
 }
+/*method-2
+array:-
+0 1 2 3 4 5 6 
+1 2 3 4 5 6 7
+      1(k=3)
+            4
+index=0
+curr=1;
+next=4
+arr[(index+k)%n)=curr
+curr=next
+index=(index+K)%n =3
+*/
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n=nums.length;
+        int count=0;
+        for(int i=0;count<n;i++){
+            int index=i;
+            int current=nums[index];
+            do{
+                int next=nums[(index+k)%n];
+                nums[(index+k)%n]=current;
+                current=next;
+                index=(index+k)%n;
+                count=count+1;
+            }while(index!=i);
+        }
+    }
+}
