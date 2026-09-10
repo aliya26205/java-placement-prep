@@ -10,6 +10,11 @@ Output: [9,4]
 Explanation: [4,9] is also accepted.*/
 
 /*method-1
+nums1=[4,5,4,7,9]  nums2=[9,4,9,8,4]
+create a set using hash set
+set1=[4,5,7,9]   set2=[9,4,8]
+thn compare set1 and set2 (see if set2 contains elements of set 1 if yes thn add that to result array)
+return result array till k only
 */
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
