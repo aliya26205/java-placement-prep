@@ -10,3 +10,20 @@ Explanation:
 6 contains 1 digit (odd number of digits). 
 7896 contains 4 digits (even number of digits). 
 Therefore only 12 and 7896 contain an even number of digits.*/
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            int n=0;
+            while(nums[i]>0){
+                int digi=nums[i]%10;
+                n=n+1;
+                nums[i]=nums[i]/10;
+            }
+            if(n%2==0){
+                count++;
+            }
+        }
+        return count;
+    }
+}
