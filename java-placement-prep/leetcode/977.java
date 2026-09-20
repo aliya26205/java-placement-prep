@@ -24,6 +24,4 @@ class Solution {
         return nums;
     }
 }
-c];
-        }
         
