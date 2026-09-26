@@ -7,3 +7,20 @@ Output: 2
 Explanation: There are two ways to climb to the top.
 1. 1 step + 1 step
 2. 2 steps*/
+class Solution {
+    public int climbStairs(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        int prev2 = 1;
+        int prev1 = 1; 
+
+        for (int i = 2; i <= n; i++) {
+            int current = prev1 + prev2;
+            prev2 = prev1;
+            prev1 = current;
+        }
+
+        return prev1;
+    }
+}
