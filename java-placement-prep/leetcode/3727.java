@@ -28,3 +28,23 @@ class Solution {
         return result;
     }
 }
+//2nd try:-
+class Solution {
+    public long maxAlternatingSum(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+            nums[i]=nums[i]*nums[i];
+        }
+        Arrays.sort(nums);
+        int mid = nums.length / 2;
+        long result = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i >= mid) {
+                result = result + nums[i];
+            } else {
+                result = result - nums[i];
+            }
+
+        }
+        return result;
+    }
+}
