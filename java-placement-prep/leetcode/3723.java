@@ -38,3 +38,26 @@ class Solution {
         return result;
     }
 }
+// solution:
+class Solution {
+    public String maxSumOfSquares(int num, int sum) {
+        if (sum == 0 || sum > 9 * num) {
+            return "";
+        }
+        int s = sum;
+         StringBuilder result = new StringBuilder();
+        int i = 0;
+        while (i < num) {
+            if (s >= 9) {
+                 result.append('9');
+                s = s - 9;
+            } else {
+                result.append(s);
+                s=0;
+            }
+            i++;
+        }
+        return result.toString();
+    }
+}
+//use StringBuilder 
