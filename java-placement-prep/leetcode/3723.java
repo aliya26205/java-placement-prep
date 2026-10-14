@@ -16,3 +16,24 @@ The score of 12 is 12 + 22 = 5.
 The score of 21 is 22 + 12 = 5.
 The score of 30 is 32 + 02 = 9.
 The maximum score is 9, which is achieved by the good integer 30. Therefore, the answer is "30".*/
+class Solution {
+    public String maxSumOfSquares(int num, int sum) {
+        if (sum == 0 || sum > 9 * num) {
+            return "";
+        }
+        int s = sum;
+        String result = "";
+        int i = 0;
+        while (i < num) {
+            if (s >= 9) {
+                result += "9";
+                s = s - 9;
+            } else {
+                result += s;
+                s=0;
+            }
+            i++;
+        }
+        return result;
+    }
+}
