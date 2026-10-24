@@ -16,3 +16,33 @@ Example 2:
 Input: arriveAlice = "10-01", leaveAlice = "10-31", arriveBob = "11-01", leaveBob = "12-31"
 Output: 0
 Explanation: There is no day when Alice and Bob are in Rome together, so we return 0.*/
+class Solution {
+    public int convert(String date) {
+        int[] days = { 31, 28, 31, 30, 31, 30,
+                31, 31, 30, 31, 30, 31 };
+
+        String[] arr = date.split("-");
+
+        int month = Integer.parseInt(arr[0]);
+        int day = Integer.parseInt(arr[1]);
+
+        for (int i = 0; i < month - 1; i++) {
+            day += days[i];
+        }
+
+        return day;
+    }
+
+    public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
+        
+        int a1 = convert(arriveAlice);
+        int a2 = convert(leaveAlice);
+        int b1 = convert(arriveBob);
+        int b2 = convert(leaveBob);
+         int start = Math.max(a1, b1);
+        int end = Math.min(a2, b2);
+
+        return Math.max(0, end - start + 1);
+        
+    }
+}
