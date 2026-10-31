@@ -20,3 +20,6 @@ class Solution {
         return result;
     }
 }
+/*For every i from 0 to n-1:
+- Put nums[i] at position 2*i
+- Put nums[i+n] at position 2*i+1*/
