@@ -54,21 +54,9 @@ class Solution {
 
 /*method -3*/
 /*Start iterating through the array.
-
-
-
 Calculate the complement.
-
-
-
 Check whether the complement exists in the HashMap.
-
-
-
 If it exists, return the current index and the stored index.
-
-
-
 Otherwise, store the current number and its index.*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
