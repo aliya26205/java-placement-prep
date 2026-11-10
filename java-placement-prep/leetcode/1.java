@@ -51,3 +51,36 @@ class Solution {
         return new int[]{};
     }
 }
+
+/*method -3*/
+/*Start iterating through the array.
+
+
+
+Calculate the complement.
+
+
+
+Check whether the complement exists in the HashMap.
+
+
+
+If it exists, return the current index and the stored index.
+
+
+
+Otherwise, store the current number and its index.*/
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+
+            map.put(nums[i], i);
+        }
+        return new int[]{};
+    }
+}
