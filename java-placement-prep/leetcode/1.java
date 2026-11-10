@@ -57,7 +57,9 @@ class Solution {
 Calculate the complement.
 Check whether the complement exists in the HashMap.
 If it exists, return the current index and the stored index.
-Otherwise, store the current number and its index.*/
+Otherwise, store the current number and its index.
+The formula is:
+int complement = target - nums[i];*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
